@@ -1,4 +1,4 @@
-module.exports = function assertEquals(expected, actual) {
+module.exports = function assertEquals (expected, actual) {
 
   if (Array.isArray(expected)) {
     if (!Array.isArray(actual)) throw new Error(`Expected type array but found type ${typeof actual}`);
@@ -12,5 +12,4 @@ module.exports = function assertEquals(expected, actual) {
 
   if (expected !== actual) throw new Error(`Expected ${expected} but found ${actual}`);
 
-
-}
+};
